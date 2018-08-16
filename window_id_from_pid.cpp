@@ -15,7 +15,7 @@ public:
         : _display(display)
         , _pid(pid)
     {
-    // Get the PID property atom.
+        // Get the PID property atom.
         _atomPID = XInternAtom(display, "_NET_WM_PID", True);
         if(_atomPID == None)
         {
@@ -36,7 +36,7 @@ private:
 
     void search(Window w)
     {
-    // Get the PID for the current Window.
+        // Get the PID for the current Window.
         Atom           type;
         int            format;
         unsigned long  nItems;
@@ -55,7 +55,7 @@ private:
             }
         }
 
-    // Recurse into child windows.
+        // Recurse into child windows.
         Window    wRoot;
         Window    wParent;
         Window   *wChild;

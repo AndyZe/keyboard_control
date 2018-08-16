@@ -2,4 +2,4 @@ Playing around with finding the active window, getting its process name, and key
 
 Compile with:
 
-g++ -std=c++11 window_id_from_pid.cpp -o window_id_from_pid -lX11
+g++ -std=c++11 my_program.cpp -o my_program -lX11
